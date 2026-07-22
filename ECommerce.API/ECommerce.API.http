@@ -1,6 +1,15 @@
-@ECommerce.API_HostAddress = http://localhost:5074
+### ১. নতুন প্রোডাক্ট তৈরি করুন (POST Request)
+POST http://localhost:5074/api/products
+Content-Type: application/json
 
-GET {{ECommerce.API_HostAddress}}/weatherforecast/
-Accept: application/json
+{
+  "name": "Gaming Mouse",
+  "price": 2500,
+  "description": "RGB Wireless Gaming Mouse",
+  "stockQuantity": 15
+}
 
 ###
+
+### ২. সব প্রোডাক্টের লিস্ট দেখুন (GET Request)
+GET http://localhost:5074/api/Products
